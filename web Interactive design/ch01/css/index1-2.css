@@ -1,0 +1,35 @@
+body{padding: 50px;}
+.container div {
+    text-align: center;
+    color: #fff;
+    font-size: 2em;
+}
+.container div:nth-child(1){background-color: #96ceb4;}
+.container div:nth-child(2){background-color: #ff6f69;}
+.container div:nth-child(3){background-color: #88d8b0;}
+.container div:nth-child(4){background-color: #ffcc5c;}
+.container div:nth-child(5){background-color: #96ceb4;}
+.container div:nth-child(6){background-color: #ff6f69;}
+.container div:nth-child(7){background-color: #96ceb4;}
+.container div:nth-child(8){background-color: #ff6f69;}
+.container div:nth-child(9){background-color: #88d8b0;}
+.container div:nth-child(10){background-color: #ffcc5c;}
+.container div:nth-child(11){background-color: #96ceb4;}
+.container div:nth-child(12){background-color: #ff6f69;}
+.container{
+    /* display: grid;
+    /* 격자 문양 먼저 만들기 */
+    /* grid-template-columns: 100px auto 100px;
+    grid-template-rows: 100px  100px;  */
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(auto-fit,minamx(100px,1fr));
+    grid-template-rows: repeat(2,100px);
+}
+.container > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    color: #ffeead;
+}

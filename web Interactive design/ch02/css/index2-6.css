@@ -1,0 +1,10 @@
+.button{
+    padding: 10px;
+}
+.target{
+    background-color: rgb(48,153,122);
+    width: 80px;
+    height: 40px;
+    border-radius: 20px;
+    margin: 2rem;
+}

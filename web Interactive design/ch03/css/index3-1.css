@@ -1,0 +1,15 @@
+.box{
+    background-color: #ccc;
+    border: 1px solid; /*색깔 지정하지 않으면 걍 검정색*/
+    width: 400px;
+    -o-transition-property:width;
+    -moz-transition-property:width;
+    -webkit-transition-property:width;
+    transition-property:width; /*바뀌는 속성 적기*/
+}
+.box img{
+    display: block;
+}
+.box:hover{
+   width: 500px;
+}

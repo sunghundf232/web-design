@@ -1,0 +1,68 @@
+CSS transition 속성(1)
+
+1. transition-property
+
+(1)속성의 이름을 기술
+- transition-property는 전환효과를 적용할 css 혹성의 이름을 기술
+- transition 효과는 보통 마우스호버 또는 포커스 등의 이벤트 발생시 작동함
+
+(2)수치를 입력하는 모든 속성에 적용 - width,height,font-size,margin,padding 이외 적용x
+
+(3)브라우저 지원
+1) modern browser - 브라우저 최신버전 모두 vendor prefix(접두사) 필요
+- chrome : 26.0
+- edge : 10.0
+- firefox : 16.0
+- safari : 6.1
+- opera : 12.1
+
+2)vendor prefix - 구버전은 각 브라우저 별도 속성앞에 vendor prefix가 필요
+ex) -webkit-transition-property:width; : 구버전은 위로 , 표준코드는 아래
+-o-transition-property:width;
+-moz-transition-property:width;
+-webkit-transition-property:width;
+transition-property:width; /*바뀌는 속성 적기*/
+
+- chrome : 4.0 -> -webkit-
+- edge
+- firefox : 4.0 -> -moz-
+- safari : 3.1 -> -webkit0-
+- opera : 10.5 -> -o-
+
+(4)문법 - transition
+none : 효과 적용x
+all : 모든 속성의 값에 전환효과가 적용
+transition-property : 지정한 속성의 값에만 전환효과 적용
+initial : 기본값으로 초기화
+inherit : 부모요소의 속성을 상속받는다.
+
+2. transition-duration
+(1)정의
+1) 효과의 전체길이 - 전환효과가 작동하는 전체 시간을 초(s),밀리초(ms)단위로 설정한다. , 기본값 : 0
+2)modern browser - 브라우저 최신 버전 모두 vendor prefix(접두사) 필요없음
+2-1) 브라우저 지원
+(3)브라우저 지원
+1) modern browser - 브라우저 최신버전 모두 vendor prefix(접두사) 필요
+- chrome : 26.0
+- edge : 10.0
+- firefox : 16.0
+- safari : 6.1
+- opera : 12.1
+
+2)vendor prefix - 구버전은 각 브라우저 별도 속성앞에 vendor prefix가 필요
+ex) -webkit-transition-property:width; : 구버전은 위로 , 표준코드는 아래
+-o-transition-property:width;
+-moz-transition-property:width;
+-webkit-transition-property:width;
+transition-property:width; /*바뀌는 속성 적기*/
+
+- chrome : 4.0 -> -webkit-
+- edge
+- firefox : 4.0 -> -moz-
+- safari : 3.1 -> -webkit0-
+- opera : 10.5 -> -o-
+
+3)문법
+time : 초,밀리초
+initial : 기본값으로 초기화 한다.
+inherit : 부모요소 속성을 상속받는다.

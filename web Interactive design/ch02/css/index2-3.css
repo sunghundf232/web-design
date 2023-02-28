@@ -1,0 +1,21 @@
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: silver;
+
+}
+/* 박스에 마우스가 호버 했을때 애니발생 */
+.box:hover{
+    animation: change 2s infinite reverse forwards;
+}
+@keyframes change{
+    0%{
+        background-color: silver;
+    }
+    50%{
+        background-color: green;
+    }
+    100%{
+        background-color: blue;
+    }
+}

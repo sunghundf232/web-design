@@ -1,0 +1,22 @@
+body,html{font-family: sans-serif;}
+#main-nav{
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+}
+#main-nav li{
+    cursor: pointer;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 20px;
+    background-color: #4889e3;
+    color: #fff;
+    /* transition: height 0.5s; */
+}
+/* #main-nav li:hover{
+    height: 50px;
+} */
+
+/* css 애니메이션 적용시 속도 빨라
+css에서 작업해놓고 나머지 작업은 js로
+*/

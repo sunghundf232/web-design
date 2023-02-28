@@ -1,0 +1,56 @@
+css 애니
+
+2. animation 종류
+(1)css ,자바스크립트,제이쿼리
+    1) css 애니
+    - css 애니 : transition
+    - keyfame 애니 속성으로 구현
+
+    2) 자바스크립트 애니 - css로 설계된 애니메이션의 실행을 이벤트를 통해 관리  
+
+    3)제이쿼리 애니메이션
+    - animate,fadeln,fadeOut 등 다양한 애니메이션 관련 함수 활용
+(2)파일종류에 따라
+
+1) gif 애니 - 포토샵 timeline 또는 전용 프로그램으로 제작
+2) svg 애니
+ - svg파일 또는 svg코드와 자바스크립트를 연동하여 제작(일러스트로 하면 제일 쪼와)
+- ex) stroke-dasharray : 선의 길이 간격 조절 -> 자바스크립트 통해 stroke-dashoffset을 변경하므로써 애니 구현 --> only svg파일에만 적용됨
+3)canvas 애니 - 자바스크립트를 통해 canvas 태그에 코드를 생성하여 구현
+
+3. css 애니 특징
+ - 사용자의 이벤트가 있을때만 작동가능 : ex) 마우스 호버
+ - 이벤트가 일어난 그 요소 및 자식요소, 뒤에 형제요소에만 적용가능
+ - 이벤트가 일어난 그 요소의 부모 및 다른 노드에 있는 요소에는 적용 불가
+
+ 1) transition - 수치가 변경된것만 적용 가능(마우스가 올라왔을때 전환과정 보여줘)
+ 2) keyframe 애니메이션
+ - 웹페이지가 열리자마자 작동
+ - 다양한 구간을 설정하여 복잡하고 정교한 애니 구현 가능
+ - 이벤트와 연결가능
+ - 횟수 , 진행방향등을 설정가능
+ - ex) 0% --> 100% 또한 반대도 가능
+
+ 4. 라이브러리를 통해서 애니 구현
+ - animate.css -> <a href="https://animate.style" title="깃허브 아이콘 클릭시 소스 볼수 있어"></a>
+ - <a href="https://cdnjs.com/"></a>
+
+ 5. hover css 사용법 - 요소에 마우스를 올렸을때
+ - <a href="https://ianlunn.github.io/Hover" title="hover 애니 소스 볼수 있어 - 깃허브 아이콘 클릭하면 소스 나와"></a>
+
+ 6. 자바스크립트 애니메이션
+ - 자바스크립트 함수에서는 애니메이션과 관련된 내용이 없다. 
+ - 대부분의 애니메이션을 css에서 설계하고 자바스크립트는 이벤트와 연결하는 역할만 수행
+
+ 7. jquery animation
+ - 애니메이션과 관련된 함수가 다수 존재
+ - 대부분 animation 함수로 가능 그외 show,hide,fadeln,fadeOut 등이 있음
+ - jqueryUl 라이브러리를 로드하여 애니메이션 시간 및 다양한 이펙트를 추가할수 있따.
+
+ 8. 라이브러리를 통한 animation 구현
+  - 라이브러리를 통한 animation 구현
+  - 슬라이드 구현 대표 라이브러리 : bxslider,slick,swiperJS
+  - 스크롤 관련 대표 라이브러리 : waypoint,skroller,scrolltrigger,parallax
+  <!-- 인터넷 검색해서 swiper 사이트 참고 또는 bxslider.com 사이트 참고 -->
+
+  

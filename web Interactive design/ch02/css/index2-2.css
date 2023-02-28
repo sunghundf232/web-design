@@ -1,0 +1,22 @@
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: silver;
+    transition: all 1s 0.5s ease;
+}
+.box:hover{
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+}
+/* 박스 자식요소 h2  색깔 변경 보기 */
+.box h2{
+    color: #000;
+    display: none;
+    transition: all 1s 0.5s ease;
+}
+/* 박스 안에 글씨 바꿔 */
+.box:hover h2{
+    display: block;
+    color: #fff;
+}

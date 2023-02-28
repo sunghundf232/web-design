@@ -1,0 +1,33 @@
+.box {
+    background-color: #ccc;
+    border: 1px solid;
+    /*색깔 지정하지 않으면 걍 검정색*/
+    width: 400px;
+    -o-transition-property: width;
+    -moz-transition-property: width;
+    -webkit-transition-property: width;
+    transition-property: width;
+    /*바뀌는 속성 적기*/
+    transition-duration: 2000ms;
+}
+
+.box img {
+
+    /* visibility: hidden;  */
+    /* display: none;*/
+    /*opacity: 0;*/
+    /*transition-property: opacity;*/
+    transition-property: visibility;
+    transition-duration: 2s;
+}
+
+.box:hover {
+    width: 500px;
+}
+
+.box:hover img {
+    visibility: visible;
+    /*display: block;*/
+    /*opacity: 1;*/
+
+}

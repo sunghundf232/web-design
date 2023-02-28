@@ -1,0 +1,24 @@
+/*
+Align items to the center -- just for presentationpurposes.
+*/
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+/*
+1. Hide the default checkbox
+*/
+
+input[type=checkbox]{
+    display: none;
+}
+/*
+2. Create the slider base and knob
+*/
+label{
+    cursor: pointer;
+    text-indent: -99999px;
+    width: 100px;
+}
