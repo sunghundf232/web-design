@@ -1,14 +1,15 @@
 .box {
-    background-color: #ccc;
+    background-color: black;
+    /* background-color: rgb(0,0,0); */
     border: 1px solid;
     /*색깔 지정하지 않으면 걍 검정색*/
     width: 400px;
     -o-transition-property: width;
     -moz-transition-property: width;
     -webkit-transition-property: width;
-    transition-property: width;
+    transition-property: all; /*width, background-color - if) 같은시간으로 번경할시 : all */
     /*바뀌는 속성 적기*/
-    transition-duration: 2000ms;
+    transition-duration: 4s;
 }
 
 .box img {
@@ -23,6 +24,8 @@
 
 .box:hover {
     width: 500px;
+    background-color: sliver;
+    background-color: rgb(100, 100, 100);
 }
 
 .box:hover img {

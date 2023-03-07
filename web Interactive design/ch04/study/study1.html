@@ -1,0 +1,50 @@
+transition 2
+
+1. transition-timing-function 
+    1) 정의
+    - 전환효과 속도를 지정
+        - 전환효과의 속도 커브를 설정
+        - 전환효과의 시작,중간,끝부분의 속도를 지정
+
+    - 대표적인 속도값 : 
+        - ease : linear 비슷 but) 초반: 살짝 느려 , 중간: 빨라 , 마지막 : 느려 -->
+        - linear
+        - ease-in : 도입부 : 늦어 --> 끝부분 빨라
+        - ease-out : 끝부분 : 늦어 --> 초반이 빨라
+        - ease-in-out   : 도입부와 끝부분 늦어 --> 가운데 빨라
+
+    2)브라우저 지원 
+    --> modern browser
+    chrome : 26.0
+    edge : 10.0
+    firfox : 16.0
+    safari : 6.1
+    opera : 12.1
+
+    --> vendor prefix - 구버전은 각 브라우저 별도 속성앞에 vendor prefix가 필요
+    chrome : 4.0 --> -webkit-
+    edge
+    firefox : 4.0 --> -moz-
+    safari : 3.1 --> -webkit-
+    opera : 10.5 --> -o-
+
+    3)문법
+
+    ease : 기본값으로 시작은 느리고 중간은 빠르고 끝부분이 느림 -> cublic-bezier(0.25,0.1,0.25,1)
+    linear : 등속 --> cublic-bezier(0,0,1,1)
+    ease-in : 처음이 느림 --> bezier(0.42,0,1,1)
+    ease-out : 끝부분이 느림
+    steps(1,start|end) : 지정한숫자의 단계로 나눠서 진행 start는 시작할때 순간적으로 전환
+        ex)  steps(숫자) : 숫자 크기 만큼 단계별로 넘어간다.
+        ex)     transition-timing-function: steps(5,start); --> 0s 1s 2s 3s 4s 끈어서 보여줘 
+        transition-timing-function: steps(5,end);   --> 1s 2s 3s 4s 5s 끈어서 보여줘
+    end는 끝날때 순간적으로 전환(lE불가)
+    cubic-bezier(n,n,n,n) : 4개의 수치로 속도모델을 지정
+
+
+2. transition-timing-function 활용
+    1) cubic-bezier : transition,animation 속도 모델로 활용
+    - 속도 커브 만들기 : cublic-bezier 커브를 생성하여 easing을 생성
+                        transition 과 animation 속도 커브로 활용
+        참고) https://cubic-bezier.com/                
+

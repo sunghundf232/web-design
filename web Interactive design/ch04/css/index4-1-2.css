@@ -1,0 +1,31 @@
+body{
+ 
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: silver;
+    transition-property: margin-left;
+    transition-duration: 1s;
+}
+.dark{
+    background-color: #444;
+}
+.box-wrapper{
+    width: 600px;
+    border: 1px solid;
+}
+.box-wrapper:hover div{
+    margin-left: 500px;
+}
+.box-wrapper div:first-child{
+
+}
+.box-wrapper div:last-child{
+    transition-timing-function: cubic-bezier(.69,.22,.33,1.43);
+   
+}

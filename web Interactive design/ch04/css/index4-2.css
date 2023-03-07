@@ -1,0 +1,32 @@
+.wrapper{
+    width: 80%;
+    max-width: 5rem auto;
+}
+#modal{
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0,0,0,.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* opacity: 0; */
+    /*링크가없으면링크를막고링크가있으면링크를적용해라->pointer-events로속성없애기*//*pointer-events: none;*/
+    visibility: hidden;
+    transition-property: opacity;
+    transition-duration: .5s;
+    transition-timing-function: cubic-bezier(.8,.07,.93,.64);
+}
+.content{
+    background-color: #fff;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    padding: 10px 40px;
+}
+#modal:target{
+    /* opacity: 1; */
+    visibility: visible;
+    pointer-events: auto;
+}

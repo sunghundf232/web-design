@@ -1,0 +1,39 @@
+body{
+ 
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: silver;
+    transition-property: margin-left;
+    transition-duration: 1s;
+    transition-delay: 0;
+    /* transition-timing-function: ease; */
+}
+.dark{
+    background-color: #444;
+}
+.box-wrapper{
+    width: 600px;
+    border: 1px solid;
+}
+.box-wrapper:hover div{
+    margin-left: 500px;
+}
+.box-wrapper:hover div:first-child{
+    /* transition-timing-function: linear; */
+    transition-timing-function: steps(5,start);
+     /* --> 0s 1s 2s 3s 4s 끈어서 보여줘 */
+}
+.box-wrapper:hover div:last-child{
+    /* transition-timing-function: ease; */
+    /* transition-timing-function: ease-in; */
+    /* transition-timing-function: ease-out; */
+    /* transition-timing-function: ease-in-out; */
+    transition-timing-function: steps(5,end);
+    /* --> 1s 2s 3s 4s 5s 끈어서 보여줘 */
+}

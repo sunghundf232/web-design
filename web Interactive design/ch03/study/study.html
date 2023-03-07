@@ -37,6 +37,7 @@ initial : 기본값으로 초기화
 inherit : 부모요소의 속성을 상속받는다.
 
 2. transition-duration
+
 (1)정의
 1) 효과의 전체길이 - 전환효과가 작동하는 전체 시간을 초(s),밀리초(ms)단위로 설정한다. , 기본값 : 0
 2)modern browser - 브라우저 최신 버전 모두 vendor prefix(접두사) 필요없음
@@ -66,3 +67,24 @@ transition-property:width; /*바뀌는 속성 적기*/
 time : 초,밀리초
 initial : 기본값으로 초기화 한다.
 inherit : 부모요소 속성을 상속받는다.
+
+
+3. transition-delay 
+
+ 1) 정의
+    - 지체 시간 : 이벤트가 일어났을때 전호나효과가 바로 시작할지 또는 지체 시간후 시작할지 설정 ,시간은 초(s), 밀리초(ms)로 설정 , 기본값 : 0
+    - modern browser : 브라우저 최신 버전들은 모두 vendor prefix(접두사) 필요없이 작동함
+
+  2) 브라우저 지원
+    - vendor prefix : 구버전은 각 브라우저 별도 속성앞에 vendor prefix 가 필요
+    ex) -webkit-transition-delay : 3s 
+    
+    chrome ---> 4.0 -> -webkit-
+    firefox --> 4.0 -> -moz-
+    safari --> 3.1 -> -webkit-
+    opera --> 10.5 -> -o-
+
+  3) 문법
+    time --> 초,밀리초
+    initial --> 기본값으로 초기화 한다.
+    inherit --> 부모요소의 속성을 상속받는다.   

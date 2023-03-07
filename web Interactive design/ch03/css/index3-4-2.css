@@ -1,0 +1,36 @@
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+li{
+    list-style: none;
+    width: 192px;
+    height: 128px;
+    overflow: hidden;
+}
+
+figure{
+    margin: 0;
+    position: relative;
+}
+figcaption{
+    position: absolute;
+    left: 100%;
+    right: -100%;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.7);
+    text-align: center;
+    line-height: 128px;
+    color: #fff;
+    opacity: 0;
+    transition: /*opacity 0.5s; */all 0.5s 0.3s;
+  
+}
+li:hover figcaption{
+    opacity: 1;
+    left: 0;
+    right: 0;
+}
